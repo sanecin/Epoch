@@ -97,7 +97,7 @@ abstract class RecordList extends \LimitIterator implements \Countable
         return $mysqli->escape_string($string);
     }
     
-    function current() {
+    function current() {    // ... вотЭтоНовоДлЯменЯ ...
         return call_user_func($this->options['itemClass'] . "::getByID", parent::current());
     }
     
